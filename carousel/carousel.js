@@ -37,17 +37,6 @@ function handleVisibilityChange() {
     }
 }
 
-slickSlice.forEach(item => {
-    item.addEventListener('scroll',()=>{
-        console.log(1)
-    })
-
-    item.onScroll = ()=>{console.log(222)}
-    
-})
-
-function myFunction(){console.log(3)}
-
 document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
 arrowLeft.addEventListener("click", function (e) {
@@ -88,10 +77,12 @@ function commonFuncBothArrows(arrowL, arrowR, e) {
     }
     slickDots[count - 1].classList.remove("slick-active");
     slickTrack.style.transition = `transform 0.5s ease-in-out`;
+
     count = arrowL ? --count : ++count;
-    console.log("count - " + count);
+
     slickTrack.style.transform = `translate3d(${-size * count}px,0px,0px)`;
     eleIsClicked = count - 1;
+
     switch (count) {
         case 0:
             slickDots[slickDots.length - 1].classList.add("slick-active");
@@ -113,8 +104,6 @@ btn.forEach((elem) => {
             slickTrack.style.transition = `transform 0.5s ease-in-out`;
 
             count = Number(elem.textContent);
-
-            console.log("eleIsClicked - btn - " + eleIsClicked);
 
             slickDots[eleIsClicked].classList.remove("slick-active");
             slickDots[count - 1].classList.add("slick-active");
@@ -139,8 +128,6 @@ function run_setInterval() {
         slickTrack.style.transform = `translate3d(${
             -size * ++count
         }px,0px,0px)`;
-
-        console.log("count - " + count);
 
         eleIsClicked = count - 1;
 

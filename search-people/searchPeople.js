@@ -94,7 +94,6 @@ function sortByAlphaBet(array) {
 }
 
 function sortByAddress(array) {
-    console.log(array);
     array.sort(function (a, b) {
         const addressA = a.address.toLowerCase().split("");
         const addressB = b.address.toLowerCase().split("");
