@@ -1,0 +1,17 @@
+.people-item{
+    display:flex;
+    align-items: center;
+}
+
+.people-info{
+    padding: 0 10px;
+}
+
+.search-people-container{
+display: flex;
+margin-top: 40px;
+}
+
+.btn-filter{
+    margin-left: 10px;
+}

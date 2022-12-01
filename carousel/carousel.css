@@ -1,0 +1,75 @@
+.carousel-container ul{ list-style: none; }
+
+.slick-slide{
+	overflow: hidden;
+}
+
+.carousel-container{
+	width: 186px;
+    height: 370px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* border: 5px solid black; */
+}
+
+.carousel-item{
+    width:186px; 
+    height:160px;
+    background-color: green;
+    font-size: 20px;
+    color:white;
+}
+
+.slick-track{
+	width: 6000px;
+	display: flex;
+	transition: 0.1s;
+	transform: translateX(-186px);
+}
+
+.slick-dots{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+    left: 36%;
+    transform: translate(-50%, -50%);
+}
+.slick-dots li{ margin: 0px 7px; }
+.slick-dots button{
+	border: none;
+    border-radius: 50%;
+    background: #c3a7a7;
+    color: #c3a7a7;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    outline: none;
+    font-size: 0px;
+    transition: 0.25s;
+}
+
+.slick-arrow{
+	position: absolute;
+    cursor: pointer;
+    display: block;
+    width: 36px;
+    height: 36px;
+    top:45%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    color: #211616;
+    z-index: 20;
+}
+.slick-next{
+	right: 7px;
+}
+.slick-prev{
+	left: 7px;
+}
+.slick-active button{
+	background: red;
+}
